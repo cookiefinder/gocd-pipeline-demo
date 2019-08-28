@@ -9,6 +9,7 @@ pipelines:
         branch: master
     stages:
       - test:
+          clean_workspace: true
           jobs:
             test:
               tasks:
@@ -19,6 +20,7 @@ pipelines:
                       - "./scripts/test.sh"
                     run_if: passed
       - build:
+          clean_workspace: yes
           jobs:
             build:
               tasks:
