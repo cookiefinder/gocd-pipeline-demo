@@ -1,0 +1,32 @@
+pipelines:
+  mst-user-service:
+    group: mst
+    label_template: "${COUNT}"
+    locking: off
+    materials:
+      app:
+        git: https://github.com/jiangzijie123/pipeline-demo
+        branch: master
+    stages:
+      - test:
+          clean_workspace: true
+          jobs:
+            test:
+              tasks:
+                - exec:
+                    command: bash
+                    arguments:
+                      - "-e"
+                      - "./scripts/test.sh"
+                    run_if: passed
+      - build:
+          clean_workspace: yes
+          jobs:
+            build:
+              tasks:
+                - exec:
+                    command: bash
+                    arguments:
+                      - "-e"
+                      - "./scripts/build.sh"
+                    run_if: passed
