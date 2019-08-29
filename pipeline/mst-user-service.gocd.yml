@@ -5,7 +5,7 @@ pipelines:
     locking: off
     materials:
       app:
-        git: git@github.com:jiangzijie123/pipeline-demo.git
+        git: https://github.com/jiangzijie123/pipeline-demo.git
         branch: master
     stages:
       - test:
