@@ -5,8 +5,9 @@ pipelines:
     locking: off
     materials:
       app:
-        git: https://github.com/jiangzijie123/pipeline-demo.git
+        git: git@github.com:jiangzijie123/pipeline-demo.git
         branch: master
+        shallow_clone: true
     stages:
       - test:
           clean_workspace: true
