@@ -3,6 +3,4 @@ services:
   mst-user-service:
     stdin_open: true
     tty: true
-    ports:
-      - "8090:8080"
     image: <IMAGE_NAME>
