@@ -3,6 +3,6 @@ services:
   mst-user-service:
     stdin_open: true
     tty: true
-    expose:
-      - "8090"
+    ports:
+      - "8090:8080"
     image: <IMAGE_NAME>
