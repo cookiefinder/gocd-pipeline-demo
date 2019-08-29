@@ -30,3 +30,14 @@ pipelines:
                       - "-e"
                       - "./scripts/build.sh"
                     run_if: passed
+      - deploy:
+          clean_workspace: yes
+          jobs:
+            deploy:
+              tasks:
+                - exec:
+                    command: bash
+                    arguments:
+                      - "-e"
+                      - "./scripts/deploy.sh"
+                    run_if: passed
