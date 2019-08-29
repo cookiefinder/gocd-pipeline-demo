@@ -1,7 +1,7 @@
 set -x
 set -e
 
-export RANCHER_URL=http://10.202.129.3:8080/v2-beta/projects/1a5
+export RANCHER_URL=http://10.202.129.3:8080/v1/projects/1a5
 export RANCHER_ACCESS_KEY=4FE2F16E90B6EED1A0AB
 export RANCHER_SECRET_KEY=2QizbCdBgqXbCN6BXPEqsB65LvnrxqEQoJaKoq8w
 
