@@ -1,6 +1,6 @@
 pipelines:
-  mst-user-service:
-    group: mst
+  pipeline-demo:
+    group: demo
     label_template: "${COUNT}"
     locking: off
     materials:

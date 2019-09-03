@@ -1,6 +1,6 @@
 version: '2'
 services:
-  mst-user-service:
+  pipeline-demo:
     stdin_open: true
     tty: true
     image: <IMAGE_NAME>
