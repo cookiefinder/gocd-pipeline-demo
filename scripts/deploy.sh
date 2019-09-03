@@ -8,7 +8,7 @@ export RANCHER_SECRET_KEY=s1hNCydBHocCnyQksTR5EE2Xay4YSCCfCWRogj4B
 if [[ -z $DOCKER_REGISRTY ]]; then
   DOCKER_REGISRTY=10.202.129.3:5000
 fi
-IMAGE_NAME=${DOCKER_REGISRTY}/pipeline-demo:${GO_PIPELINE_COUNTER}
+IMAGE_NAME=${DOCKER_REGISRTY}/pipeline-demo/pipeline-demo:${GO_PIPELINE_COUNTER}
 
 sed -i "s#<IMAGE_NAME>#$IMAGE_NAME#g" docker-compose.yml
 
