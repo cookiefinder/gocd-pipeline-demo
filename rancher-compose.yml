@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 service:
   pipeline-demo:
     scale: 1
