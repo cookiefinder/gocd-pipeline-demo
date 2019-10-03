@@ -16,6 +16,7 @@ pipelines:
                 - exec:
                     command: bash
                     arguments:
+                      - "-e"
                       - "./scripts/test.sh"
                     run_if: passed
       - build:
