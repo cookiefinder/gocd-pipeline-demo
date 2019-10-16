@@ -14,9 +14,4 @@ public class PipelineDemoApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
-
-	@Test
-	public void name() {
-		assertEquals(1, 2);
-	}
 }
