@@ -5,7 +5,7 @@ pipelines:
     locking: off
     materials:
       app:
-        git: git@github.com:foolname/gocd-pipeline-demo.git
+        git: https://github.com/foolname/gocd-pipeline-demo.git
         branch: master
     stages:
       - test:
