@@ -15,9 +15,4 @@ public class PipelineDemoApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
-
-	@Test
-	public void name() {
-		assertTrue(false);
-	}
 }
