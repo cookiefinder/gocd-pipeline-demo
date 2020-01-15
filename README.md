@@ -224,7 +224,7 @@
 
   自动挂载出来的目录权限为root，而我们当前登录虚拟机的用户为vagrant，因此我们没有权限操作挂载出来的`/tmp/gradle`目录，无法与docker内的gradle镜像中的缓存目录进行挂载
 
-#####5. 配置rancher
+##### 5. 配置rancher
 
 1. 启动rancher server容器
 
@@ -294,15 +294,15 @@
    ```yaml
    # 最后加上
    - deploy:
-   		clean_workspace: yes
-   		jobs:
-   			deploy:
-   				tasks:
-   					- exec:
-   							command: bash
-   							arguments:
-   								- "./scripts/deploy.sh"
-   							run_if: passed
+       clean_workspace: yes
+   	   jobs:
+   	     deploy:
+   		   tasks:
+   		     - exec:
+   			     command: bash
+   				 arguments:
+   				   - "./scripts/deploy.sh"
+   				 run_if: passed
    ```
 
 7. 访问rancher主页，增加我们docker的私有仓库地址
